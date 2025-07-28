@@ -10,7 +10,7 @@ go run main.go
 ## test
 
 ```bash
-curl -s localhost:8000/users/productview  | jq .
+curl -s http://localhost:8000/users/productview  | jq .
 
 curl -sX POST http://localhost:8000/users/signup \
   -H "Content-Type: application/json" \
@@ -29,4 +29,5 @@ curl -sX POST http://localhost:8000/users/signup \
     "email":      "taro@example.com",
     "password":   "secret123"
   }' | jq .
+
 ```
