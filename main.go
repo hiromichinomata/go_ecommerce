@@ -11,9 +11,9 @@ import (
 	"github.com/hiromichinomata/go_ecommerce/routes"
 )
 
-func main(){
+func main() {
 	port := os.Getenv("PORT")
-	if port == ""{
+	if port == "" {
 		port = "8000"
 	}
 
