@@ -5,8 +5,6 @@ import (
 	"os"
 
 	"github.com/gin-gonic/gin"
-	// "github.com/hiromichinomata/go_ecommerce/controllers"
-	// "github.com/hiromichinomata/go_ecommerce/database"
 	// "github.com/hiromichinomata/go_ecommerce/middleware"
 	"github.com/hiromichinomata/go_ecommerce/controllers"
 	"github.com/hiromichinomata/go_ecommerce/database"
@@ -32,7 +30,7 @@ func main() {
 
 	router.GET("/addtocart", app.AddToCart())
 	router.GET("/removeitem", app.RemoveItem())
-	// router.GET("/listcart", controllers.GetItemFromCart())
+	router.GET("/listcart", controllers.GetItemFromCart())
 	// router.GET("/cartcheckout", app.BuyFromCart())
 	router.GET("/instantbuy", app.InstantBuy())
 

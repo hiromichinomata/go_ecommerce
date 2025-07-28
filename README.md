@@ -23,11 +23,12 @@ curl -sX POST http://localhost:8000/users/signup \
   }' | jq .
 
 
-  curl -sX POST http://localhost:8000/users/login \
+curl -sX POST http://localhost:8000/users/login \
   -H "Content-Type: application/json" \
   -d '{
     "email":      "taro@example.com",
     "password":   "secret123"
   }' | jq .
 
+curl -s http://localhost:8000/listcart?id=<user_id>  | jq .
 ```
