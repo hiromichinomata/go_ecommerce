@@ -35,7 +35,7 @@ func main() {
 	router.GET("/instantbuy", app.InstantBuy())
 
 	router.POST("/addaddress", controllers.AddAddress())
-	// router.PUT("/edithomeaddress", controllers.EditHomeAddress())
+	router.PUT("/edithomeaddress", controllers.EditHomeAddress())
 	// router.PUT("/editworkaddress", controllers.EditWorkAddress())
 	router.GET("/deleteaddresses", controllers.DeleteAddress())
 
